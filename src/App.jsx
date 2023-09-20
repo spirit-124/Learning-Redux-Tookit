@@ -1,8 +1,9 @@
 import { Routes, Route } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import PageNotFound from "./pages/PageNotFound";
-import Layout from "./components/Layout";
+import Layout from "./Components/Layout";
 import ProductDetails from "./pages/ProductDetails";
+import SearchBox from "./components/SearchBox";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
           path="/"
           element={
             <Layout>
-              {/* <SearchBox /> */}
+              <SearchBox />
               <HomePage />
             </Layout>
           }
